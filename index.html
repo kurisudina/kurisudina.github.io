@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人主页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft Yahei", sans-serif;
+        }
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #409eff, #7cb3ff);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+        }
+        .card h2 {
+            color: #409eff;
+            margin-bottom: 15px;
+            border-left: 4px solid #409eff;
+            padding-left: 10px;
+        }
+        .skill-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .skill-item {
+            background: #e8f3ff;
+            padding: 12px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>欢迎来到我的个人网站</h1>
+        <p>数字个人名片 | 记录学习与成长</p>
+    </header>
+
+    <div class="container">
+        <!-- 个人简介板块（必填） -->
+        <div class="card">
+            <h2>个人简介</h2>
+            <p><strong>姓名：</strong>kurisudina</p>
+            <p><strong>专业：</strong>计算机网络技术</p>
+            <p><strong>年级：</strong>2025级</p>
+            <p style="margin-top:10px;">热爱互联网技术，喜欢搭建网站、学习网络设备配置，课余喜欢研究前端页面与自动化工具。</p>
+        </div>
+
+        <!-- 技能兴趣板块（必填） -->
+        <div class="card">
+            <h2>技能 & 兴趣</h2>
+            <div class="skill-list">
+                <div class="skill-item">HTML/CSS 网页制作</div>
+                <div class="skill-item">Linux基础操作</div>
+                <div class="skill-item">计算机网络配置</div>
+                <div class="skill-item">Minecraft模组研究</div>
+                <div class="skill-item">AI工具辅助创作</div>
+                <div class="skill-item">摄影与图文排版</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        © 2026 个人主页 | AI辅助制作
+    </footer>
+</body>
+</html>
